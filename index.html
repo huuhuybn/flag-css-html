@@ -26,7 +26,8 @@
   
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/flag-css-html.css">
+  <link rel="stylesheet" href="css/flag-icon.css">
+  <link rel="stylesheet" href="css/flag-icons.min.css">
   <link rel="stylesheet" href="css/flag-sprite.css">
   <link rel="stylesheet" href="css/flag-dropdown.css">
 </head>
@@ -288,6 +289,25 @@
 &lt;span class="fis fis-fr fis-xl fis-rounded"&gt;&lt;/span&gt;</pre>
           </div>
         </div>
+
+        <!-- Demo 8: SVG Flags (from Lipis) -->
+        <div class="demo-card">
+          <div class="demo-card-header"><h3>SVG Flags (High Quality)</h3></div>
+          <div class="demo-card-body" style="gap: 1rem; flex-wrap: wrap; align-items: center;">
+            <span style="display:inline-block; width: 48px; height: 36px; background: url('flags/4x3/vn.svg') center/cover;"></span>
+            <span style="display:inline-block; width: 48px; height: 36px; background: url('flags/4x3/us.svg') center/cover;"></span>
+            <span style="display:inline-block; width: 48px; height: 36px; background: url('flags/4x3/jp.svg') center/cover;"></span>
+            <span style="display:inline-block; width: 36px; height: 36px; background: url('flags/1x1/kr.svg') center/cover; border-radius: 50%;"></span>
+            <span style="display:inline-block; width: 36px; height: 36px; background: url('flags/1x1/cn.svg') center/cover; border-radius: 50%;"></span>
+          </div>
+          <div class="demo-card-code">
+            <pre>&lt;!-- SVG Flags (4:3 ratio) --&gt;
+&lt;span style="background: url('flags/4x3/vn.svg'); width: 48px; height: 36px;"&gt;&lt;/span&gt;
+
+&lt;!-- SVG Flags (1:1 square, circular) --&gt;
+&lt;span style="background: url('flags/1x1/kr.svg'); width: 36px; border-radius: 50%;"&gt;&lt;/span&gt;</pre>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -507,10 +527,13 @@
               <button class="code-copy">📋 Copy</button>
             </div>
             <div class="code-content">
-              <pre>&lt;!-- Flag Icons (Emoji) --&gt;
-&lt;link rel="stylesheet" href="https://huuhuybn.github.io/flag-css-html/css/flag-css-html.css"&gt;
+              <pre>&lt;!-- Option 1: Flag Icons (Emoji) --&gt;
+&lt;link rel="stylesheet" href="https://huuhuybn.github.io/flag-css-html/css/flag-icon.css"&gt;
 
-&lt;!-- HOẶC Flag Icons (Sprite Image) --&gt;
+&lt;!-- Option 2: Flag Icons (SVG - High Quality) --&gt;
+&lt;link rel="stylesheet" href="https://huuhuybn.github.io/flag-css-html/css/flag-icons.min.css"&gt;
+
+&lt;!-- Option 3: Flag Icons (Sprite Image) --&gt;
 &lt;link rel="stylesheet" href="https://huuhuybn.github.io/flag-css-html/css/flag-sprite.css"&gt;
 
 &lt;!-- Dropdown (tùy chọn) --&gt;
