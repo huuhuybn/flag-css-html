@@ -5,22 +5,16 @@ A free, lightweight CSS library providing country flags for web developers. Feat
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Pages](https://img.shields.io/badge/demo-live-green)](https://huuhuybn.github.io/flag-css-html/)
 
-## 🌐 Languages
+## 🌐 Languages (22)
 
-- [English](README.md)
-- [Tiếng Việt](README.vi.md)
-- [中文](README.zh.md)
-- [日本語](README.ja.md)
-- [한국어](README.ko.md)
-- [Español](README.es.md)
-- [Français](README.fr.md)
-- [Deutsch](README.de.md)
-- [Português](README.pt.md)
-- [Русский](README.ru.md)
-- [العربية](README.ar.md)
-- [हिन्दी](README.hi.md)
-- [Bahasa Indonesia](README.id.md)
-- [ภาษาไทย](README.th.md)
+| | | | |
+|---|---|---|---|
+| [English](README.md) | [Tiếng Việt](README.vi.md) | [中文](README.zh.md) | [日本語](README.ja.md) |
+| [한국어](README.ko.md) | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md) |
+| [Português](README.pt.md) | [Italiano](README.it.md) | [Nederlands](README.nl.md) | [Polski](README.pl.md) |
+| [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Ελληνικά](README.el.md) | [עברית](README.he.md) |
+| [العربية](README.ar.md) | [हिन्दी](README.hi.md) | [ภาษาไทย](README.th.md) | [Bahasa Indonesia](README.id.md) |
+| [Bahasa Melayu](README.ms.md) | [Filipino](README.tl.md) | | |
 
 ## 🌍 Live Demo
 
