@@ -138,11 +138,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Credits
-
-- Inspired by [flag-icons](https://github.com/lipis/flag-icons) by Lipis
-- Flag sprite from [APKCombo](https://apkcombo.com)
-
 ---
 
 Made with ❤️ for the web development community
