@@ -1,0 +1,153 @@
+/**
+ * Flag Icon CSS - Sprite Version
+ * Uses a single sprite image for all flags
+ * Lighter alternative to emoji-based flags
+ */
+
+/* ===== Base Sprite Flag Class ===== */
+.fis {
+  display: inline-block;
+  width: 21px;
+  height: 14px;
+  background-image: url('../images/flags-sprite.png');
+  background-repeat: no-repeat;
+  background-size: 21px auto;
+  vertical-align: middle;
+}
+
+/* ===== Size Variants ===== */
+.fis-sm {
+  width: 16px;
+  height: 11px;
+  background-size: 16px auto;
+}
+
+.fis-lg {
+  width: 32px;
+  height: 21px;
+  background-size: 32px auto;
+}
+
+.fis-xl {
+  width: 42px;
+  height: 28px;
+  background-size: 42px auto;
+}
+
+/* ===== Border Radius ===== */
+.fis-rounded {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.fis-round {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* ===== Shadow Effect ===== */
+.fis-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Hover Effects ===== */
+.fis-hover {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.fis-hover:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Country Flags - Background Positions ===== */
+/* Positions based on 14px height per flag in sprite */
+
+.fis-ad { background-position: 0 0; }
+.fis-ae { background-position: 0 -14px; }
+.fis-af { background-position: 0 -28px; }
+.fis-al { background-position: 0 -42px; }
+.fis-am { background-position: 0 -56px; }
+.fis-ar { background-position: 0 -70px; }
+.fis-at { background-position: 0 -84px; }
+.fis-au { background-position: 0 -98px; }
+.fis-az { background-position: 0 -112px; }
+.fis-ba { background-position: 0 -126px; }
+.fis-bd { background-position: 0 -140px; }
+.fis-be { background-position: 0 -154px; }
+.fis-bg { background-position: 0 -168px; }
+.fis-bn { background-position: 0 -182px; }
+.fis-bo { background-position: 0 -196px; }
+.fis-br { background-position: 0 -210px; }
+.fis-by { background-position: 0 -224px; }
+.fis-ca { background-position: 0 -238px; }
+.fis-ch { background-position: 0 -252px; }
+.fis-cl { background-position: 0 -266px; }
+.fis-cn { background-position: 0 -280px; }
+.fis-co { background-position: 0 -294px; }
+.fis-cz { background-position: 0 -308px; }
+.fis-de { background-position: 0 -322px; }
+.fis-dk { background-position: 0 -336px; }
+.fis-dz { background-position: 0 -350px; }
+.fis-ee { background-position: 0 -364px; }
+.fis-eg { background-position: 0 -378px; }
+.fis-es { background-position: 0 -392px; }
+.fis-fi { background-position: 0 -406px; }
+.fis-fr { background-position: 0 -420px; }
+.fis-gb { background-position: 0 -434px; }
+.fis-ge { background-position: 0 -448px; }
+.fis-gr { background-position: 0 -462px; }
+.fis-hr { background-position: 0 -476px; }
+.fis-hu { background-position: 0 -490px; }
+.fis-id { background-position: 0 -504px; }
+.fis-ie { background-position: 0 -518px; }
+.fis-il { background-position: 0 -532px; }
+
+/* Additional positions - continuing the sprite */
+/* Note: The sprite has 39 flags (551/14 ≈ 39 rows) */
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 480px) {
+  .fis {
+    width: 18px;
+    height: 12px;
+    background-size: 18px auto;
+  }
+}
+
+/* ===== Dropdown Integration ===== */
+.fi-dropdown .fis {
+  margin-right: 0.5rem;
+}
+
+.fi-dropdown-toggle .fis {
+  flex-shrink: 0;
+}
+
+/* ===== Grid Layout for Sprite Flags ===== */
+.fis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.fis-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.fis-grid-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.fis-grid-item .fis-code {
+  font-size: 0.75rem;
+  color: #666;
+  font-family: monospace;
+}

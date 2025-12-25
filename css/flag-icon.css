@@ -1,0 +1,399 @@
+/**
+ * Flag Icon CSS Library v1.0.0
+ * Complete list of all country flags using emoji
+ * Based on ISO 3166-1-alpha-2 codes
+ * https://github.com/yourusername/flag-icon
+ * MIT License
+ */
+
+/* ===== CSS Variables ===== */
+:root {
+  --fi-size-xs: 1rem;
+  --fi-size-sm: 1.25rem;
+  --fi-size-md: 1.5rem;
+  --fi-size-lg: 2rem;
+  --fi-size-xl: 2.5rem;
+  --fi-size-2xl: 3rem;
+  --fi-border-radius: 2px;
+  --fi-border-radius-round: 50%;
+}
+
+/* ===== Base Flag Class ===== */
+.fi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fi-size-md);
+  line-height: 1;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", sans-serif;
+  vertical-align: middle;
+  font-style: normal;
+}
+
+/* ===== Size Variants ===== */
+.fi-xs { font-size: var(--fi-size-xs); }
+.fi-sm { font-size: var(--fi-size-sm); }
+.fi-md { font-size: var(--fi-size-md); }
+.fi-lg { font-size: var(--fi-size-lg); }
+.fi-xl { font-size: var(--fi-size-xl); }
+.fi-2xl { font-size: var(--fi-size-2xl); }
+
+/* ===== Border Radius Variants ===== */
+.fi-round { border-radius: var(--fi-border-radius-round); overflow: hidden; }
+.fi-rounded { border-radius: var(--fi-border-radius); overflow: hidden; }
+
+/* ===== Shadow Effect ===== */
+.fi-shadow { text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+
+/* ===== Hover Effects ===== */
+.fi-hover { transition: transform 0.2s ease, filter 0.2s ease; cursor: pointer; }
+.fi-hover:hover { transform: scale(1.1); }
+
+/* ===== Animation Classes ===== */
+.fi-pulse { animation: fi-pulse 2s infinite; }
+@keyframes fi-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+
+.fi-wave { animation: fi-wave 1s ease-in-out infinite; }
+@keyframes fi-wave { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(15deg); } 75% { transform: rotate(-15deg); } }
+
+/* ===== Flag Grid Layout ===== */
+.fi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 1rem; padding: 1rem; }
+.fi-grid-item { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 0.75rem; border-radius: 8px; transition: background-color 0.2s ease; }
+.fi-grid-item:hover { background-color: rgba(0, 0, 0, 0.05); }
+.fi-grid-item .fi-code { font-size: 0.75rem; color: #666; font-family: monospace; }
+
+/* ========================================
+   COMPLETE LIST OF COUNTRY FLAGS (250+)
+   Based on ISO 3166-1-alpha-2 codes
+   ======================================== */
+
+/* A */
+.fi-ad::before { content: "🇦🇩"; } /* Andorra */
+.fi-ae::before { content: "🇦🇪"; } /* UAE */
+.fi-af::before { content: "🇦🇫"; } /* Afghanistan */
+.fi-ag::before { content: "🇦🇬"; } /* Antigua and Barbuda */
+.fi-ai::before { content: "🇦🇮"; } /* Anguilla */
+.fi-al::before { content: "🇦🇱"; } /* Albania */
+.fi-am::before { content: "🇦🇲"; } /* Armenia */
+.fi-ao::before { content: "🇦🇴"; } /* Angola */
+.fi-aq::before { content: "🇦🇶"; } /* Antarctica */
+.fi-ar::before { content: "🇦🇷"; } /* Argentina */
+.fi-as::before { content: "🇦🇸"; } /* American Samoa */
+.fi-at::before { content: "🇦🇹"; } /* Austria */
+.fi-au::before { content: "🇦🇺"; } /* Australia */
+.fi-aw::before { content: "🇦🇼"; } /* Aruba */
+.fi-ax::before { content: "🇦🇽"; } /* Åland Islands */
+.fi-az::before { content: "🇦🇿"; } /* Azerbaijan */
+
+/* B */
+.fi-ba::before { content: "🇧🇦"; } /* Bosnia and Herzegovina */
+.fi-bb::before { content: "🇧🇧"; } /* Barbados */
+.fi-bd::before { content: "🇧🇩"; } /* Bangladesh */
+.fi-be::before { content: "🇧🇪"; } /* Belgium */
+.fi-bf::before { content: "🇧🇫"; } /* Burkina Faso */
+.fi-bg::before { content: "🇧🇬"; } /* Bulgaria */
+.fi-bh::before { content: "🇧🇭"; } /* Bahrain */
+.fi-bi::before { content: "🇧🇮"; } /* Burundi */
+.fi-bj::before { content: "🇧🇯"; } /* Benin */
+.fi-bl::before { content: "🇧🇱"; } /* Saint Barthélemy */
+.fi-bm::before { content: "🇧🇲"; } /* Bermuda */
+.fi-bn::before { content: "🇧🇳"; } /* Brunei */
+.fi-bo::before { content: "🇧🇴"; } /* Bolivia */
+.fi-bq::before { content: "🇧🇶"; } /* Caribbean Netherlands */
+.fi-br::before { content: "🇧🇷"; } /* Brazil */
+.fi-bs::before { content: "🇧🇸"; } /* Bahamas */
+.fi-bt::before { content: "🇧🇹"; } /* Bhutan */
+.fi-bv::before { content: "🇧🇻"; } /* Bouvet Island */
+.fi-bw::before { content: "🇧🇼"; } /* Botswana */
+.fi-by::before { content: "🇧🇾"; } /* Belarus */
+.fi-bz::before { content: "🇧🇿"; } /* Belize */
+
+/* C */
+.fi-ca::before { content: "🇨🇦"; } /* Canada */
+.fi-cc::before { content: "🇨🇨"; } /* Cocos Islands */
+.fi-cd::before { content: "🇨🇩"; } /* DR Congo */
+.fi-cf::before { content: "🇨🇫"; } /* Central African Republic */
+.fi-cg::before { content: "🇨🇬"; } /* Republic of Congo */
+.fi-ch::before { content: "🇨🇭"; } /* Switzerland */
+.fi-ci::before { content: "🇨🇮"; } /* Côte d'Ivoire */
+.fi-ck::before { content: "🇨🇰"; } /* Cook Islands */
+.fi-cl::before { content: "🇨🇱"; } /* Chile */
+.fi-cm::before { content: "🇨🇲"; } /* Cameroon */
+.fi-cn::before { content: "🇨🇳"; } /* China */
+.fi-co::before { content: "🇨🇴"; } /* Colombia */
+.fi-cr::before { content: "🇨🇷"; } /* Costa Rica */
+.fi-cu::before { content: "🇨🇺"; } /* Cuba */
+.fi-cv::before { content: "🇨🇻"; } /* Cabo Verde */
+.fi-cw::before { content: "🇨🇼"; } /* Curaçao */
+.fi-cx::before { content: "🇨🇽"; } /* Christmas Island */
+.fi-cy::before { content: "🇨🇾"; } /* Cyprus */
+.fi-cz::before { content: "🇨🇿"; } /* Czech Republic */
+
+/* D */
+.fi-de::before { content: "🇩🇪"; } /* Germany */
+.fi-dj::before { content: "🇩🇯"; } /* Djibouti */
+.fi-dk::before { content: "🇩🇰"; } /* Denmark */
+.fi-dm::before { content: "🇩🇲"; } /* Dominica */
+.fi-do::before { content: "🇩🇴"; } /* Dominican Republic */
+.fi-dz::before { content: "🇩🇿"; } /* Algeria */
+
+/* E */
+.fi-ec::before { content: "🇪🇨"; } /* Ecuador */
+.fi-ee::before { content: "🇪🇪"; } /* Estonia */
+.fi-eg::before { content: "🇪🇬"; } /* Egypt */
+.fi-eh::before { content: "🇪🇭"; } /* Western Sahara */
+.fi-er::before { content: "🇪🇷"; } /* Eritrea */
+.fi-es::before { content: "🇪🇸"; } /* Spain */
+.fi-et::before { content: "🇪🇹"; } /* Ethiopia */
+.fi-eu::before { content: "🇪🇺"; } /* European Union */
+
+/* F */
+.fi-fi::before { content: "🇫🇮"; } /* Finland */
+.fi-fj::before { content: "🇫🇯"; } /* Fiji */
+.fi-fk::before { content: "🇫🇰"; } /* Falkland Islands */
+.fi-fm::before { content: "🇫🇲"; } /* Micronesia */
+.fi-fo::before { content: "🇫🇴"; } /* Faroe Islands */
+.fi-fr::before { content: "🇫🇷"; } /* France */
+
+/* G */
+.fi-ga::before { content: "🇬🇦"; } /* Gabon */
+.fi-gb::before { content: "🇬🇧"; } /* United Kingdom */
+.fi-gd::before { content: "🇬🇩"; } /* Grenada */
+.fi-ge::before { content: "🇬🇪"; } /* Georgia */
+.fi-gf::before { content: "🇬🇫"; } /* French Guiana */
+.fi-gg::before { content: "🇬🇬"; } /* Guernsey */
+.fi-gh::before { content: "🇬🇭"; } /* Ghana */
+.fi-gi::before { content: "🇬🇮"; } /* Gibraltar */
+.fi-gl::before { content: "🇬🇱"; } /* Greenland */
+.fi-gm::before { content: "🇬🇲"; } /* Gambia */
+.fi-gn::before { content: "🇬🇳"; } /* Guinea */
+.fi-gp::before { content: "🇬🇵"; } /* Guadeloupe */
+.fi-gq::before { content: "🇬🇶"; } /* Equatorial Guinea */
+.fi-gr::before { content: "🇬🇷"; } /* Greece */
+.fi-gs::before { content: "🇬🇸"; } /* South Georgia */
+.fi-gt::before { content: "🇬🇹"; } /* Guatemala */
+.fi-gu::before { content: "🇬🇺"; } /* Guam */
+.fi-gw::before { content: "🇬🇼"; } /* Guinea-Bissau */
+.fi-gy::before { content: "🇬🇾"; } /* Guyana */
+
+/* H */
+.fi-hk::before { content: "🇭🇰"; } /* Hong Kong */
+.fi-hm::before { content: "🇭🇲"; } /* Heard Island */
+.fi-hn::before { content: "🇭🇳"; } /* Honduras */
+.fi-hr::before { content: "🇭🇷"; } /* Croatia */
+.fi-ht::before { content: "🇭🇹"; } /* Haiti */
+.fi-hu::before { content: "🇭🇺"; } /* Hungary */
+
+/* I */
+.fi-id::before { content: "🇮🇩"; } /* Indonesia */
+.fi-ie::before { content: "🇮🇪"; } /* Ireland */
+.fi-il::before { content: "🇮🇱"; } /* Israel */
+.fi-im::before { content: "🇮🇲"; } /* Isle of Man */
+.fi-in::before { content: "🇮🇳"; } /* India */
+.fi-io::before { content: "🇮🇴"; } /* British Indian Ocean Territory */
+.fi-iq::before { content: "🇮🇶"; } /* Iraq */
+.fi-ir::before { content: "🇮🇷"; } /* Iran */
+.fi-is::before { content: "🇮🇸"; } /* Iceland */
+.fi-it::before { content: "🇮🇹"; } /* Italy */
+
+/* J */
+.fi-je::before { content: "🇯🇪"; } /* Jersey */
+.fi-jm::before { content: "🇯🇲"; } /* Jamaica */
+.fi-jo::before { content: "🇯🇴"; } /* Jordan */
+.fi-jp::before { content: "🇯🇵"; } /* Japan */
+
+/* K */
+.fi-ke::before { content: "🇰🇪"; } /* Kenya */
+.fi-kg::before { content: "🇰🇬"; } /* Kyrgyzstan */
+.fi-kh::before { content: "🇰🇭"; } /* Cambodia */
+.fi-ki::before { content: "🇰🇮"; } /* Kiribati */
+.fi-km::before { content: "🇰🇲"; } /* Comoros */
+.fi-kn::before { content: "🇰🇳"; } /* Saint Kitts and Nevis */
+.fi-kp::before { content: "🇰🇵"; } /* North Korea */
+.fi-kr::before { content: "🇰🇷"; } /* South Korea */
+.fi-kw::before { content: "🇰🇼"; } /* Kuwait */
+.fi-ky::before { content: "🇰🇾"; } /* Cayman Islands */
+.fi-kz::before { content: "🇰🇿"; } /* Kazakhstan */
+
+/* L */
+.fi-la::before { content: "🇱🇦"; } /* Laos */
+.fi-lb::before { content: "🇱🇧"; } /* Lebanon */
+.fi-lc::before { content: "🇱🇨"; } /* Saint Lucia */
+.fi-li::before { content: "🇱🇮"; } /* Liechtenstein */
+.fi-lk::before { content: "🇱🇰"; } /* Sri Lanka */
+.fi-lr::before { content: "🇱🇷"; } /* Liberia */
+.fi-ls::before { content: "🇱🇸"; } /* Lesotho */
+.fi-lt::before { content: "🇱🇹"; } /* Lithuania */
+.fi-lu::before { content: "🇱🇺"; } /* Luxembourg */
+.fi-lv::before { content: "🇱🇻"; } /* Latvia */
+.fi-ly::before { content: "🇱🇾"; } /* Libya */
+
+/* M */
+.fi-ma::before { content: "🇲🇦"; } /* Morocco */
+.fi-mc::before { content: "🇲🇨"; } /* Monaco */
+.fi-md::before { content: "🇲🇩"; } /* Moldova */
+.fi-me::before { content: "🇲🇪"; } /* Montenegro */
+.fi-mf::before { content: "🇲🇫"; } /* Saint Martin */
+.fi-mg::before { content: "🇲🇬"; } /* Madagascar */
+.fi-mh::before { content: "🇲🇭"; } /* Marshall Islands */
+.fi-mk::before { content: "🇲🇰"; } /* North Macedonia */
+.fi-ml::before { content: "🇲🇱"; } /* Mali */
+.fi-mm::before { content: "🇲🇲"; } /* Myanmar */
+.fi-mn::before { content: "🇲🇳"; } /* Mongolia */
+.fi-mo::before { content: "🇲🇴"; } /* Macao */
+.fi-mp::before { content: "🇲🇵"; } /* Northern Mariana Islands */
+.fi-mq::before { content: "🇲🇶"; } /* Martinique */
+.fi-mr::before { content: "🇲🇷"; } /* Mauritania */
+.fi-ms::before { content: "🇲🇸"; } /* Montserrat */
+.fi-mt::before { content: "🇲🇹"; } /* Malta */
+.fi-mu::before { content: "🇲🇺"; } /* Mauritius */
+.fi-mv::before { content: "🇲🇻"; } /* Maldives */
+.fi-mw::before { content: "🇲🇼"; } /* Malawi */
+.fi-mx::before { content: "🇲🇽"; } /* Mexico */
+.fi-my::before { content: "🇲🇾"; } /* Malaysia */
+.fi-mz::before { content: "🇲🇿"; } /* Mozambique */
+
+/* N */
+.fi-na::before { content: "🇳🇦"; } /* Namibia */
+.fi-nc::before { content: "🇳🇨"; } /* New Caledonia */
+.fi-ne::before { content: "🇳🇪"; } /* Niger */
+.fi-nf::before { content: "🇳🇫"; } /* Norfolk Island */
+.fi-ng::before { content: "🇳🇬"; } /* Nigeria */
+.fi-ni::before { content: "🇳🇮"; } /* Nicaragua */
+.fi-nl::before { content: "🇳🇱"; } /* Netherlands */
+.fi-no::before { content: "🇳🇴"; } /* Norway */
+.fi-np::before { content: "🇳🇵"; } /* Nepal */
+.fi-nr::before { content: "🇳🇷"; } /* Nauru */
+.fi-nu::before { content: "🇳🇺"; } /* Niue */
+.fi-nz::before { content: "🇳🇿"; } /* New Zealand */
+
+/* O */
+.fi-om::before { content: "🇴🇲"; } /* Oman */
+
+/* P */
+.fi-pa::before { content: "🇵🇦"; } /* Panama */
+.fi-pe::before { content: "🇵🇪"; } /* Peru */
+.fi-pf::before { content: "🇵🇫"; } /* French Polynesia */
+.fi-pg::before { content: "🇵🇬"; } /* Papua New Guinea */
+.fi-ph::before { content: "🇵🇭"; } /* Philippines */
+.fi-pk::before { content: "🇵🇰"; } /* Pakistan */
+.fi-pl::before { content: "🇵🇱"; } /* Poland */
+.fi-pm::before { content: "🇵🇲"; } /* Saint Pierre and Miquelon */
+.fi-pn::before { content: "🇵🇳"; } /* Pitcairn Islands */
+.fi-pr::before { content: "🇵🇷"; } /* Puerto Rico */
+.fi-ps::before { content: "🇵🇸"; } /* Palestine */
+.fi-pt::before { content: "🇵🇹"; } /* Portugal */
+.fi-pw::before { content: "🇵🇼"; } /* Palau */
+.fi-py::before { content: "🇵🇾"; } /* Paraguay */
+
+/* Q */
+.fi-qa::before { content: "🇶🇦"; } /* Qatar */
+
+/* R */
+.fi-re::before { content: "🇷🇪"; } /* Réunion */
+.fi-ro::before { content: "🇷🇴"; } /* Romania */
+.fi-rs::before { content: "🇷🇸"; } /* Serbia */
+.fi-ru::before { content: "🇷🇺"; } /* Russia */
+.fi-rw::before { content: "🇷🇼"; } /* Rwanda */
+
+/* S */
+.fi-sa::before { content: "🇸🇦"; } /* Saudi Arabia */
+.fi-sb::before { content: "🇸🇧"; } /* Solomon Islands */
+.fi-sc::before { content: "🇸🇨"; } /* Seychelles */
+.fi-sd::before { content: "🇸🇩"; } /* Sudan */
+.fi-se::before { content: "🇸🇪"; } /* Sweden */
+.fi-sg::before { content: "🇸🇬"; } /* Singapore */
+.fi-sh::before { content: "🇸🇭"; } /* Saint Helena */
+.fi-si::before { content: "🇸🇮"; } /* Slovenia */
+.fi-sj::before { content: "🇸🇯"; } /* Svalbard and Jan Mayen */
+.fi-sk::before { content: "🇸🇰"; } /* Slovakia */
+.fi-sl::before { content: "🇸🇱"; } /* Sierra Leone */
+.fi-sm::before { content: "🇸🇲"; } /* San Marino */
+.fi-sn::before { content: "🇸🇳"; } /* Senegal */
+.fi-so::before { content: "🇸🇴"; } /* Somalia */
+.fi-sr::before { content: "🇸🇷"; } /* Suriname */
+.fi-ss::before { content: "🇸🇸"; } /* South Sudan */
+.fi-st::before { content: "🇸🇹"; } /* São Tomé and Príncipe */
+.fi-sv::before { content: "🇸🇻"; } /* El Salvador */
+.fi-sx::before { content: "🇸🇽"; } /* Sint Maarten */
+.fi-sy::before { content: "🇸🇾"; } /* Syria */
+.fi-sz::before { content: "🇸🇿"; } /* Eswatini */
+
+/* T */
+.fi-tc::before { content: "🇹🇨"; } /* Turks and Caicos Islands */
+.fi-td::before { content: "🇹🇩"; } /* Chad */
+.fi-tf::before { content: "🇹🇫"; } /* French Southern Territories */
+.fi-tg::before { content: "🇹🇬"; } /* Togo */
+.fi-th::before { content: "🇹🇭"; } /* Thailand */
+.fi-tj::before { content: "🇹🇯"; } /* Tajikistan */
+.fi-tk::before { content: "🇹🇰"; } /* Tokelau */
+.fi-tl::before { content: "🇹🇱"; } /* Timor-Leste */
+.fi-tm::before { content: "🇹🇲"; } /* Turkmenistan */
+.fi-tn::before { content: "🇹🇳"; } /* Tunisia */
+.fi-to::before { content: "🇹🇴"; } /* Tonga */
+.fi-tr::before { content: "🇹🇷"; } /* Turkey */
+.fi-tt::before { content: "🇹🇹"; } /* Trinidad and Tobago */
+.fi-tv::before { content: "🇹🇻"; } /* Tuvalu */
+.fi-tw::before { content: "🇹🇼"; } /* Taiwan */
+.fi-tz::before { content: "🇹🇿"; } /* Tanzania */
+
+/* U */
+.fi-ua::before { content: "🇺🇦"; } /* Ukraine */
+.fi-ug::before { content: "🇺🇬"; } /* Uganda */
+.fi-um::before { content: "🇺🇲"; } /* U.S. Minor Outlying Islands */
+.fi-un::before { content: "🇺🇳"; } /* United Nations */
+.fi-us::before { content: "🇺🇸"; } /* United States */
+.fi-uy::before { content: "🇺🇾"; } /* Uruguay */
+.fi-uz::before { content: "🇺🇿"; } /* Uzbekistan */
+
+/* V */
+.fi-va::before { content: "🇻🇦"; } /* Vatican City */
+.fi-vc::before { content: "🇻🇨"; } /* Saint Vincent and the Grenadines */
+.fi-ve::before { content: "🇻🇪"; } /* Venezuela */
+.fi-vg::before { content: "🇻🇬"; } /* British Virgin Islands */
+.fi-vi::before { content: "🇻🇮"; } /* U.S. Virgin Islands */
+.fi-vn::before { content: "🇻🇳"; } /* Vietnam */
+.fi-vu::before { content: "🇻🇺"; } /* Vanuatu */
+
+/* W */
+.fi-wf::before { content: "🇼🇫"; } /* Wallis and Futuna */
+.fi-ws::before { content: "🇼🇸"; } /* Samoa */
+
+/* X */
+.fi-xk::before { content: "🇽🇰"; } /* Kosovo */
+
+/* Y */
+.fi-ye::before { content: "🇾🇪"; } /* Yemen */
+.fi-yt::before { content: "🇾🇹"; } /* Mayotte */
+
+/* Z */
+.fi-za::before { content: "🇿🇦"; } /* South Africa */
+.fi-zm::before { content: "🇿🇲"; } /* Zambia */
+.fi-zw::before { content: "🇿🇼"; } /* Zimbabwe */
+
+/* ===== Special Flags ===== */
+.fi-ww::before { content: "🌍"; } /* World */
+.fi-xx::before { content: "🏳️"; } /* Unknown/Default */
+
+/* ===== UK Subdivisions ===== */
+.fi-gb-eng::before { content: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"; } /* England */
+.fi-gb-sct::before { content: "🏴󠁧󠁢󠁳󠁣󠁴󠁿"; } /* Scotland */
+.fi-gb-wls::before { content: "🏴󠁧󠁢󠁷󠁬󠁳󠁿"; } /* Wales */
+.fi-gb-nir::before { content: "🇬🇧"; } /* Northern Ireland (uses UK flag) */
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .fi-grid { grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 0.5rem; padding: 0.5rem; }
+  .fi-grid-item { padding: 0.5rem; }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --fi-size-xs: 0.875rem;
+    --fi-size-sm: 1rem;
+    --fi-size-md: 1.25rem;
+    --fi-size-lg: 1.5rem;
+    --fi-size-xl: 2rem;
+    --fi-size-2xl: 2.5rem;
+  }
+}

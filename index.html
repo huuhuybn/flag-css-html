@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flag Icon CSS - Thư viện CSS miễn phí cung cấp cờ các quốc gia cho lập trình viên web. Responsive, Mobile-first, SEO-friendly.">
+  <meta name="keywords" content="flag icons, country flags, CSS flags, language selector, dropdown menu, web development">
+  <meta name="author" content="Flag Icon CSS">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Flag Icon CSS - Thư viện cờ quốc gia miễn phí">
+  <meta property="og:description" content="Thư viện CSS miễn phí cung cấp cờ các quốc gia, dropdown menus cho language selector.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://huuhuybn.github.io/flag-css-html/">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flag Icon CSS">
+  <meta name="twitter:description" content="Thư viện CSS miễn phí cho cờ quốc gia">
+  
+  <title>Flag Icon CSS - Thư viện cờ quốc gia miễn phí cho Web Developers</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏳️</text></svg>">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flag-css-html.css">
+  <link rel="stylesheet" href="css/flag-sprite.css">
+  <link rel="stylesheet" href="css/flag-dropdown.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">🏳️</span>
+        <span>Flag Icon CSS</span>
+      </a>
+      
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#features">Tính năng</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#flags">Danh sách cờ</a></li>
+          <li><a href="#install">Cài đặt</a></li>
+          <li><a href="#usage">Hướng dẫn</a></li>
+        </ul>
+        
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+          <a href="https://github.com/huuhuybn/flag-css-html" class="btn btn-icon" target="_blank">⭐ GitHub</a>
+        </div>
+      </nav>
+      
+      <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="#features">Tính năng</a></li>
+      <li><a href="#demo">Demo</a></li>
+      <li><a href="#flags">Danh sách cờ</a></li>
+      <li><a href="#install">Cài đặt</a></li>
+      <li><a href="#usage">Hướng dẫn</a></li>
+      <li><a href="https://github.com/huuhuybn/flag-css-html" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-flags">🇻🇳 🇺🇸 🇬🇧 🇫🇷 🇩🇪 🇯🇵 🇰🇷 🇨🇳</div>
+      <h1>Flag Icon CSS</h1>
+      <p class="hero-subtitle">Thư viện CSS miễn phí cung cấp cờ 200+ quốc gia. Responsive, Mobile-first, SEO-friendly. Hoàn hảo cho language selector và dropdown menus.</p>
+      <div class="hero-buttons">
+        <a href="#install" class="btn btn-primary">🚀 Bắt đầu ngay</a>
+        <a href="#demo" class="btn btn-outline">👁️ Xem Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>✨ Tính năng nổi bật</h2>
+        <p>Mọi thứ bạn cần để hiển thị cờ quốc gia trên website</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>2 Phiên bản</h3>
+          <p>Emoji flags (không cần ảnh) hoặc Sprite flags (1 file ảnh đóng gói). Tùy chọn theo nhu cầu.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Responsive</h3>
+          <p>Mobile-first design. Hoạt động hoàn hảo trên mọi kích thước màn hình.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Nhẹ & Nhanh</h3>
+          <p>Chỉ ~5KB minified. Không dependencies, load cực nhanh.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3>Tùy biến cao</h3>
+          <p>Nhiều size, style và animation. CSS variables dễ customize.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>200+ Quốc gia</h3>
+          <p>Đầy đủ cờ của tất cả các quốc gia và vùng lãnh thổ trên thế giới.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Dropdown sẵn có</h3>
+          <p>Nhiều mẫu dropdown đẹp: dark/light theme, searchable, compact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo -->
+  <section id="demo" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>🎯 Live Demo</h2>
+        <p>Các kiểu dropdown và hiển thị cờ khác nhau</p>
+      </div>
+      
+      <div class="demo-grid">
+        <!-- Demo 1: Basic Dropdown -->
+        <div class="demo-card">
+          <div class="demo-card-header"><h3>Basic Dropdown</h3></div>
+          <div class="demo-card-body">
+            <div class="fi-dropdown">
+              <button class="fi-dropdown-toggle">
+                <span class="fi fi-vn"></span>
+                <span>Tiếng Việt</span>
+              </button>
+              <ul class="fi-dropdown-menu">
+                <li><a href="#" data-value="vi"><span class="fi fi-vn"></span> Tiếng Việt</a></li>
+                <li><a href="#" data-value="en"><span class="fi fi-us"></span> English</a></li>
+                <li><a href="#" data-value="zh"><span class="fi fi-cn"></span> 中文</a></li>
+                <li><a href="#" data-value="ja"><span class="fi fi-jp"></span> 日本語</a></li>
+                <li><a href="#" data-value="ko"><span class="fi fi-kr"></span> 한국어</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="demo-card-code">
+            <pre>&lt;div class="fi-dropdown"&gt;
+  &lt;button class="fi-dropdown-toggle"&gt;
+    &lt;span class="fi fi-vn"&gt;&lt;/span&gt;
+    &lt;span&gt;Tiếng Việt&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="fi-dropdown-menu"&gt;...&lt;/ul&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+
+        <!-- Demo 2: Dark Theme -->
+        <div class="demo-card">
+          <div class="demo-card-header"><h3>Dark Theme</h3></div>
+          <div class="demo-card-body" style="background: #1f2937; padding: 2rem;">
+            <div class="fi-dropdown fi-dropdown-dark">
+              <button class="fi-dropdown-toggle">
+                <span class="fi fi-gb"></span>
+                <span>English</span>
+              </button>
+              <ul class="fi-dropdown-menu">
+                <li><a href="#"><span class="fi fi-gb"></span> English</a></li>
+                <li><a href="#"><span class="fi fi-fr"></span> Français</a></li>
+                <li><a href="#"><span class="fi fi-de"></span> Deutsch</a></li>
+                <li><a href="#"><span class="fi fi-es"></span> Español</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="demo-card-code">
+            <pre>&lt;div class="fi-dropdown fi-dropdown-dark"&gt;
+  ...
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+
+        <!-- Demo 3: Icon Only -->
+        <div class="demo-card">
+          <div class="demo-card-header"><h3>Icon Only</h3></div>
+          <div class="demo-card-body">
+            <div class="fi-dropdown fi-dropdown-icon-only">
+              <button class="fi-dropdown-toggle">
+                <span class="fi fi-jp fi-lg"></span>
+              </button>
+              <ul class="fi-dropdown-menu">
+                <li><a href="#"><span class="fi fi-jp"></span> 日本語</a></li>
+                <li><a href="#"><span class="fi fi-kr"></span> 한국어</a></li>
+                <li><a href="#"><span class="fi fi-cn"></span> 中文</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="demo-card-code">
+            <pre>&lt;div class="fi-dropdown fi-dropdown-icon-only"&gt;
+  &lt;button class="fi-dropdown-toggle"&gt;
+    &lt;span class="fi fi-jp fi-lg"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  ...
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+
+        <!-- Demo 4: Rounded -->
+        <div class="demo-card">
+          <div class="demo-card-header"><h3>Rounded Style</h3></div>
+          <div class="demo-card-body">
+            <div class="fi-dropdown fi-dropdown-rounded fi-dropdown-solid">
+              <button class="fi-dropdown-toggle">
+                <span class="fi fi-us"></span>
+                <span>English</span>
+              </button>
+              <ul class="fi-dropdown-menu">
+                <li><a href="#"><span class="fi fi-us"></span> English</a></li>
+                <li><a href="#"><span class="fi fi-vn"></span> Tiếng Việt</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="demo-card-code">
+            <pre>&lt;div class="fi-dropdown fi-dropdown-rounded fi-dropdown-solid"&gt;
+  ...
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+
+        <!-- Demo 5: Different Sizes -->
+        <div class="demo-card">
+          <div class="demo-card-header"><h3>Flag Sizes</h3></div>
+          <div class="demo-card-body" style="gap: 1rem; flex-wrap: wrap;">
+            <span class="fi fi-vn fi-xs"></span>
+            <span class="fi fi-vn fi-sm"></span>
+            <span class="fi fi-vn fi-md"></span>
+            <span class="fi fi-vn fi-lg"></span>
+            <span class="fi fi-vn fi-xl"></span>
+            <span class="fi fi-vn fi-2xl"></span>
+          </div>
+          <div class="demo-card-code">
+            <pre>&lt;span class="fi fi-vn fi-xs"&gt;&lt;/span&gt;
+&lt;span class="fi fi-vn fi-sm"&gt;&lt;/span&gt;
+&lt;span class="fi fi-vn fi-md"&gt;&lt;/span&gt;
+&lt;span class="fi fi-vn fi-lg"&gt;&lt;/span&gt;
+&lt;span class="fi fi-vn fi-xl"&gt;&lt;/span&gt;
+&lt;span class="fi fi-vn fi-2xl"&gt;&lt;/span&gt;</pre>
+          </div>
+        </div>
+
+        <!-- Demo 6: With Animation -->
+        <div class="demo-card">
+          <div class="demo-card-header"><h3>Animations</h3></div>
+          <div class="demo-card-body" style="gap: 2rem;">
+            <span class="fi fi-vn fi-xl fi-pulse"></span>
+            <span class="fi fi-us fi-xl fi-wave"></span>
+            <span class="fi fi-jp fi-xl fi-hover"></span>
+          </div>
+          <div class="demo-card-code">
+            <pre>&lt;span class="fi fi-vn fi-xl fi-pulse"&gt;&lt;/span&gt;
+&lt;span class="fi fi-us fi-xl fi-wave"&gt;&lt;/span&gt;
+&lt;span class="fi fi-jp fi-xl fi-hover"&gt;&lt;/span&gt;</pre>
+          </div>
+        </div>
+
+        <!-- Demo 7: Sprite Flags -->
+        <div class="demo-card">
+          <div class="demo-card-header"><h3>Sprite Flags (Image-based)</h3></div>
+          <div class="demo-card-body" style="gap: 1rem; flex-wrap: wrap;">
+            <span class="fis fis-gb"></span>
+            <span class="fis fis-de fis-lg"></span>
+            <span class="fis fis-fr fis-xl"></span>
+            <span class="fis fis-es fis-lg fis-rounded"></span>
+            <span class="fis fis-cn fis-shadow"></span>
+          </div>
+          <div class="demo-card-code">
+            <pre>&lt;!-- Sprite flags (class: fis) --&gt;
+&lt;span class="fis fis-gb"&gt;&lt;/span&gt;
+&lt;span class="fis fis-de fis-lg"&gt;&lt;/span&gt;
+&lt;span class="fis fis-fr fis-xl fis-rounded"&gt;&lt;/span&gt;</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flags List -->
+  <section id="flags" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>🌍 Danh sách cờ quốc gia (250+)</h2>
+        <p>Đầy đủ cờ theo chuẩn ISO 3166-1-alpha-2. Click vào cờ để copy code.</p>
+      </div>
+      
+      <div class="flags-filter">
+        <button class="filter-btn active" data-region="all">Tất cả</button>
+        <button class="filter-btn" data-region="asia">Châu Á</button>
+        <button class="filter-btn" data-region="europe">Châu Âu</button>
+        <button class="filter-btn" data-region="americas">Châu Mỹ</button>
+        <button class="filter-btn" data-region="africa">Châu Phi</button>
+        <button class="filter-btn" data-region="oceania">Châu Đại Dương</button>
+      </div>
+      
+      <div class="flags-grid">
+        <!-- Asia -->
+        <div class="flag-item" data-region="asia"><span class="fi fi-vn fi-lg"></span><span>fi-vn</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-cn fi-lg"></span><span>fi-cn</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-jp fi-lg"></span><span>fi-jp</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-kr fi-lg"></span><span>fi-kr</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-kp fi-lg"></span><span>fi-kp</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-th fi-lg"></span><span>fi-th</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-sg fi-lg"></span><span>fi-sg</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-my fi-lg"></span><span>fi-my</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-id fi-lg"></span><span>fi-id</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-ph fi-lg"></span><span>fi-ph</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-mm fi-lg"></span><span>fi-mm</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-kh fi-lg"></span><span>fi-kh</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-la fi-lg"></span><span>fi-la</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-bn fi-lg"></span><span>fi-bn</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-in fi-lg"></span><span>fi-in</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-pk fi-lg"></span><span>fi-pk</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-bd fi-lg"></span><span>fi-bd</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-lk fi-lg"></span><span>fi-lk</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-np fi-lg"></span><span>fi-np</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-bt fi-lg"></span><span>fi-bt</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-mv fi-lg"></span><span>fi-mv</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-af fi-lg"></span><span>fi-af</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-ir fi-lg"></span><span>fi-ir</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-iq fi-lg"></span><span>fi-iq</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-sa fi-lg"></span><span>fi-sa</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-ae fi-lg"></span><span>fi-ae</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-kw fi-lg"></span><span>fi-kw</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-qa fi-lg"></span><span>fi-qa</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-om fi-lg"></span><span>fi-om</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-ye fi-lg"></span><span>fi-ye</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-jo fi-lg"></span><span>fi-jo</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-lb fi-lg"></span><span>fi-lb</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-sy fi-lg"></span><span>fi-sy</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-il fi-lg"></span><span>fi-il</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-ps fi-lg"></span><span>fi-ps</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-tr fi-lg"></span><span>fi-tr</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-ge fi-lg"></span><span>fi-ge</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-am fi-lg"></span><span>fi-am</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-az fi-lg"></span><span>fi-az</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-kz fi-lg"></span><span>fi-kz</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-uz fi-lg"></span><span>fi-uz</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-kg fi-lg"></span><span>fi-kg</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-tj fi-lg"></span><span>fi-tj</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-tm fi-lg"></span><span>fi-tm</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-mn fi-lg"></span><span>fi-mn</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-tw fi-lg"></span><span>fi-tw</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-hk fi-lg"></span><span>fi-hk</span></div>
+        <div class="flag-item" data-region="asia"><span class="fi fi-mo fi-lg"></span><span>fi-mo</span></div>
+        
+        <!-- Europe -->
+        <div class="flag-item" data-region="europe"><span class="fi fi-gb fi-lg"></span><span>fi-gb</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-de fi-lg"></span><span>fi-de</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-fr fi-lg"></span><span>fi-fr</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-it fi-lg"></span><span>fi-it</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-es fi-lg"></span><span>fi-es</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-pt fi-lg"></span><span>fi-pt</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-nl fi-lg"></span><span>fi-nl</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-be fi-lg"></span><span>fi-be</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-at fi-lg"></span><span>fi-at</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-ch fi-lg"></span><span>fi-ch</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-pl fi-lg"></span><span>fi-pl</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-cz fi-lg"></span><span>fi-cz</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-sk fi-lg"></span><span>fi-sk</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-hu fi-lg"></span><span>fi-hu</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-ro fi-lg"></span><span>fi-ro</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-bg fi-lg"></span><span>fi-bg</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-gr fi-lg"></span><span>fi-gr</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-hr fi-lg"></span><span>fi-hr</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-si fi-lg"></span><span>fi-si</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-rs fi-lg"></span><span>fi-rs</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-ba fi-lg"></span><span>fi-ba</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-me fi-lg"></span><span>fi-me</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-mk fi-lg"></span><span>fi-mk</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-al fi-lg"></span><span>fi-al</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-xk fi-lg"></span><span>fi-xk</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-ua fi-lg"></span><span>fi-ua</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-by fi-lg"></span><span>fi-by</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-md fi-lg"></span><span>fi-md</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-ru fi-lg"></span><span>fi-ru</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-se fi-lg"></span><span>fi-se</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-no fi-lg"></span><span>fi-no</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-dk fi-lg"></span><span>fi-dk</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-fi fi-lg"></span><span>fi-fi</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-is fi-lg"></span><span>fi-is</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-ie fi-lg"></span><span>fi-ie</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-lt fi-lg"></span><span>fi-lt</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-lv fi-lg"></span><span>fi-lv</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-ee fi-lg"></span><span>fi-ee</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-lu fi-lg"></span><span>fi-lu</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-mc fi-lg"></span><span>fi-mc</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-ad fi-lg"></span><span>fi-ad</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-sm fi-lg"></span><span>fi-sm</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-va fi-lg"></span><span>fi-va</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-li fi-lg"></span><span>fi-li</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-mt fi-lg"></span><span>fi-mt</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-cy fi-lg"></span><span>fi-cy</span></div>
+        <div class="flag-item" data-region="europe"><span class="fi fi-eu fi-lg"></span><span>fi-eu</span></div>
+        
+        <!-- Americas -->
+        <div class="flag-item" data-region="americas"><span class="fi fi-us fi-lg"></span><span>fi-us</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-ca fi-lg"></span><span>fi-ca</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-mx fi-lg"></span><span>fi-mx</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-br fi-lg"></span><span>fi-br</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-ar fi-lg"></span><span>fi-ar</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-cl fi-lg"></span><span>fi-cl</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-co fi-lg"></span><span>fi-co</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-pe fi-lg"></span><span>fi-pe</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-ve fi-lg"></span><span>fi-ve</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-ec fi-lg"></span><span>fi-ec</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-bo fi-lg"></span><span>fi-bo</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-py fi-lg"></span><span>fi-py</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-uy fi-lg"></span><span>fi-uy</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-gy fi-lg"></span><span>fi-gy</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-sr fi-lg"></span><span>fi-sr</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-gt fi-lg"></span><span>fi-gt</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-bz fi-lg"></span><span>fi-bz</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-hn fi-lg"></span><span>fi-hn</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-sv fi-lg"></span><span>fi-sv</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-ni fi-lg"></span><span>fi-ni</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-cr fi-lg"></span><span>fi-cr</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-pa fi-lg"></span><span>fi-pa</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-cu fi-lg"></span><span>fi-cu</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-jm fi-lg"></span><span>fi-jm</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-ht fi-lg"></span><span>fi-ht</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-do fi-lg"></span><span>fi-do</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-pr fi-lg"></span><span>fi-pr</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-tt fi-lg"></span><span>fi-tt</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-bb fi-lg"></span><span>fi-bb</span></div>
+        <div class="flag-item" data-region="americas"><span class="fi fi-bs fi-lg"></span><span>fi-bs</span></div>
+        
+        <!-- Africa -->
+        <div class="flag-item" data-region="africa"><span class="fi fi-eg fi-lg"></span><span>fi-eg</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-za fi-lg"></span><span>fi-za</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-ng fi-lg"></span><span>fi-ng</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-ke fi-lg"></span><span>fi-ke</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-et fi-lg"></span><span>fi-et</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-gh fi-lg"></span><span>fi-gh</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-tz fi-lg"></span><span>fi-tz</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-ug fi-lg"></span><span>fi-ug</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-ma fi-lg"></span><span>fi-ma</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-dz fi-lg"></span><span>fi-dz</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-tn fi-lg"></span><span>fi-tn</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-ly fi-lg"></span><span>fi-ly</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-sd fi-lg"></span><span>fi-sd</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-ss fi-lg"></span><span>fi-ss</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-sn fi-lg"></span><span>fi-sn</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-ci fi-lg"></span><span>fi-ci</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-cm fi-lg"></span><span>fi-cm</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-cd fi-lg"></span><span>fi-cd</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-ao fi-lg"></span><span>fi-ao</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-mz fi-lg"></span><span>fi-mz</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-zw fi-lg"></span><span>fi-zw</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-bw fi-lg"></span><span>fi-bw</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-na fi-lg"></span><span>fi-na</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-rw fi-lg"></span><span>fi-rw</span></div>
+        <div class="flag-item" data-region="africa"><span class="fi fi-mu fi-lg"></span><span>fi-mu</span></div>
+        
+        <!-- Oceania -->
+        <div class="flag-item" data-region="oceania"><span class="fi fi-au fi-lg"></span><span>fi-au</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-nz fi-lg"></span><span>fi-nz</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-fj fi-lg"></span><span>fi-fj</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-pg fi-lg"></span><span>fi-pg</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-ws fi-lg"></span><span>fi-ws</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-to fi-lg"></span><span>fi-to</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-vu fi-lg"></span><span>fi-vu</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-sb fi-lg"></span><span>fi-sb</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-nc fi-lg"></span><span>fi-nc</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-pf fi-lg"></span><span>fi-pf</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-gu fi-lg"></span><span>fi-gu</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-ki fi-lg"></span><span>fi-ki</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-fm fi-lg"></span><span>fi-fm</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-pw fi-lg"></span><span>fi-pw</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-mh fi-lg"></span><span>fi-mh</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-nr fi-lg"></span><span>fi-nr</span></div>
+        <div class="flag-item" data-region="oceania"><span class="fi fi-tv fi-lg"></span><span>fi-tv</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation -->
+  <section id="install" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>📦 Cài đặt</h2>
+        <p>Nhiều cách để thêm Flag Icon CSS vào dự án của bạn</p>
+      </div>
+      
+      <div class="install-options">
+        <div class="install-option">
+          <h3>🔗 CDN (Khuyến nghị)</h3>
+          <div class="code-block">
+            <div class="code-header">
+              <span>HTML</span>
+              <button class="code-copy">📋 Copy</button>
+            </div>
+            <div class="code-content">
+              <pre>&lt;!-- Flag Icons (Emoji) --&gt;
+&lt;link rel="stylesheet" href="https://huuhuybn.github.io/flag-css-html/css/flag-css-html.css"&gt;
+
+&lt;!-- HOẶC Flag Icons (Sprite Image) --&gt;
+&lt;link rel="stylesheet" href="https://huuhuybn.github.io/flag-css-html/css/flag-sprite.css"&gt;
+
+&lt;!-- Dropdown (tùy chọn) --&gt;
+&lt;link rel="stylesheet" href="https://huuhuybn.github.io/flag-css-html/css/flag-dropdown.css"&gt;
+&lt;script src="https://huuhuybn.github.io/flag-css-html/js/flag-dropdown.js"&gt;&lt;/script&gt;</pre>
+            </div>
+          </div>
+        </div>
+        
+        <div class="install-option">
+          <h3>📥 Download</h3>
+          <div class="code-block">
+            <div class="code-header">
+              <span>Terminal</span>
+              <button class="code-copy">📋 Copy</button>
+            </div>
+            <div class="code-content">
+              <pre>git clone https://github.com/huuhuybn/flag-css-html.git</pre>
+            </div>
+          </div>
+          <p style="margin-top: 1rem; color: var(--color-text-muted); font-size: 0.9rem;">
+            Sau đó copy thư mục <code>css/</code> và <code>js/</code> vào dự án.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage -->
+  <section id="usage" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>📖 Hướng dẫn sử dụng</h2>
+        <p>Các ví dụ về cách sử dụng Flag Icon CSS</p>
+      </div>
+      
+      <div class="install-options">
+        <div class="install-option">
+          <h3>🏳️ Hiển thị cờ đơn giản</h3>
+          <div class="code-block">
+            <div class="code-header"><span>HTML</span><button class="code-copy">📋 Copy</button></div>
+            <div class="code-content">
+              <pre>&lt;!-- Cờ Việt Nam --&gt;
+&lt;span class="fi fi-vn"&gt;&lt;/span&gt;
+
+&lt;!-- Với size khác --&gt;
+&lt;span class="fi fi-vn fi-lg"&gt;&lt;/span&gt;
+&lt;span class="fi fi-vn fi-xl"&gt;&lt;/span&gt;
+
+&lt;!-- Với animation --&gt;
+&lt;span class="fi fi-vn fi-lg fi-hover"&gt;&lt;/span&gt;</pre>
+            </div>
+          </div>
+        </div>
+        
+        <div class="install-option">
+          <h3>🔽 Dropdown Language Selector</h3>
+          <div class="code-block">
+            <div class="code-header"><span>HTML</span><button class="code-copy">📋 Copy</button></div>
+            <div class="code-content">
+              <pre>&lt;div class="fi-dropdown"&gt;
+  &lt;button class="fi-dropdown-toggle"&gt;
+    &lt;span class="fi fi-vn"&gt;&lt;/span&gt;
+    &lt;span&gt;Tiếng Việt&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="fi-dropdown-menu"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fi fi-vn"&gt;&lt;/span&gt; Tiếng Việt&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fi fi-us"&gt;&lt;/span&gt; English&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+            </div>
+          </div>
+        </div>
+        
+        <div class="install-option">
+          <h3>🎨 Các variant có sẵn</h3>
+          <div class="code-block">
+            <div class="code-header"><span>CSS Classes</span><button class="code-copy">📋 Copy</button></div>
+            <div class="code-content">
+              <pre>/* Sizes */
+.fi-xs, .fi-sm, .fi-md, .fi-lg, .fi-xl, .fi-2xl
+
+/* Animations */
+.fi-hover, .fi-pulse, .fi-wave
+
+/* Dropdown variants */
+.fi-dropdown-dark
+.fi-dropdown-compact
+.fi-dropdown-lg
+.fi-dropdown-rounded
+.fi-dropdown-solid
+.fi-dropdown-icon-only</pre>
+            </div>
+          </div>
+        </div>
+        
+        <div class="install-option">
+          <h3>⚡ JavaScript API</h3>
+          <div class="code-block">
+            <div class="code-header"><span>JavaScript</span><button class="code-copy">📋 Copy</button></div>
+            <div class="code-content">
+              <pre>// Khởi tạo dropdown với options
+initFlagDropdown('.fi-dropdown', {
+  onSelect: (data) =&gt; {
+    console.log('Selected:', data.value);
+  },
+  closeOnSelect: true,
+  keyboard: true
+});
+
+// Lấy giá trị hiện tại
+const dropdown = document.querySelector('.fi-dropdown');
+console.log(dropdown._flagDropdown.getValue());</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="https://github.com/huuhuybn/flag-css-html" target="_blank">GitHub</a>
+        <a href="https://github.com/huuhuybn/flag-css-html/issues" target="_blank">Report Bug</a>
+        <a href="https://github.com/huuhuybn/flag-css-html/blob/main/LICENSE" target="_blank">MIT License</a>
+      </div>
+      <p class="footer-copy">
+        Made with ❤️ by Flag Icon CSS Team • 2024
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/flag-dropdown.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
