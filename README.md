@@ -12,6 +12,15 @@ A free, lightweight CSS library providing country flags for web developers. Feat
 - [中文](README.zh.md)
 - [日本語](README.ja.md)
 - [한국어](README.ko.md)
+- [Español](README.es.md)
+- [Français](README.fr.md)
+- [Deutsch](README.de.md)
+- [Português](README.pt.md)
+- [Русский](README.ru.md)
+- [العربية](README.ar.md)
+- [हिन्दी](README.hi.md)
+- [Bahasa Indonesia](README.id.md)
+- [ภาษาไทย](README.th.md)
 
 ## 🌍 Live Demo
 
